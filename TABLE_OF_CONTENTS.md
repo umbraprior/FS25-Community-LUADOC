@@ -457,90 +457,48 @@
 
 ### Particle System
 
-- [Particle System](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle System/Particle
-  System.md)
-- [Get Emit Count Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getEmitCountScale.md)
-- [Get Emit Start Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getEmitStartTime.md)
-- [Get Emit Stop Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getEmitStopTime.md)
-- [Get Emitter Shape](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getEmitterShape.md)
-- [Get Emitter Shape Velocity Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getEmitterShapeVelocityScale.md)
-- [Get Max Num Of Particles](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getMaxNumOfParticles.md)
-- [Get Num Of Particles To Emit Per Ms](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getNumOfParticlesToEmitPerMs.md)
-- [Get Particle System Average Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemAverageSpeed.md)
-- [Get Particle System Damping](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemDamping.md)
-- [Get Particle System Lifespan](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemLifespan.md)
-- [Get Particle System Normal Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemNormalSpeed.md)
-- [Get Particle System Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemSpeed.md)
-- [Get Particle System Speed Random](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemSpeedRandom.md)
-- [Get Particle System Sprite Scale X](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemSpriteScaleX.md)
-- [Get Particle System Sprite Scale XGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemSpriteScaleXGain.md)
-- [Get Particle System Sprite Scale Y](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemSpriteScaleY.md)
-- [Get Particle System Sprite Scale YGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemSpriteScaleYGain.md)
-- [Get Particle System Tangent Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/getParticleSystemTangentSpeed.md)
-- [Reset Emit Start Timer](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/resetEmitStartTimer.md)
-- [Reset Emit Stop Timer](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/resetEmitStopTimer.md)
-- [Reset Num Of Emitted Particles](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/resetNumOfEmittedParticles.md)
-- [Set Emit Count Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setEmitCountScale.md)
-- [Set Emit Start Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setEmitStartTime.md)
-- [Set Emit Stop Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setEmitStopTime.md)
-- [Set Emitter Shape](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setEmitterShape.md)
-- [Set Emitter Shape Velocity Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setEmitterShapeVelocityScale.md)
-- [Set Emitting State](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setEmittingState.md)
-- [Set Max Num Of Particles](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setMaxNumOfParticles.md)
-- [Set Num Of Particles To Emit Per Ms](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setNumOfParticlesToEmitPerMs.md)
-- [Set Particle Shape](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleShape.md)
-- [Set Particle System Damping](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemDamping.md)
-- [Set Particle System Lifespan](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemLifespan.md)
-- [Set Particle System Normal Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemNormalSpeed.md)
-- [Set Particle System Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemSpeed.md)
-- [Set Particle System Speed Random](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemSpeedRandom.md)
-- [Set Particle System Sprite Scale X](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemSpriteScaleX.md)
-- [Set Particle System Sprite Scale XGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemSpriteScaleXGain.md)
-- [Set Particle System Sprite Scale Y](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemSpriteScaleY.md)
-- [Set Particle System Sprite Scale YGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemSpriteScaleYGain.md)
-- [Set Particle System Tangent Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemTangentSpeed.md)
-- [Set Particle System Time Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle
-  System/setParticleSystemTimeScale.md)
+- [Particle System](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/Particle%20System.md)
+- [Get Emit Count Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getEmitCountScale.md)
+- [Get Emit Start Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getEmitStartTime.md)
+- [Get Emit Stop Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getEmitStopTime.md)
+- [Get Emitter Shape](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getEmitterShape.md)
+- [Get Emitter Shape Velocity Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getEmitterShapeVelocityScale.md)
+- [Get Max Num Of Particles](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getMaxNumOfParticles.md)
+- [Get Num Of Particles To Emit Per Ms](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getNumOfParticlesToEmitPerMs.md)
+- [Get Particle System Average Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemAverageSpeed.md)
+- [Get Particle System Damping](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemDamping.md)
+- [Get Particle System Lifespan](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemLifespan.md)
+- [Get Particle System Normal Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemNormalSpeed.md)
+- [Get Particle System Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemSpeed.md)
+- [Get Particle System Speed Random](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemSpeedRandom.md)
+- [Get Particle System Sprite Scale X](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemSpriteScaleX.md)
+- [Get Particle System Sprite Scale XGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemSpriteScaleXGain.md)
+- [Get Particle System Sprite Scale Y](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemSpriteScaleY.md)
+- [Get Particle System Sprite Scale YGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemSpriteScaleYGain.md)
+- [Get Particle System Tangent Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/getParticleSystemTangentSpeed.md)
+- [Reset Emit Start Timer](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/resetEmitStartTimer.md)
+- [Reset Emit Stop Timer](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/resetEmitStopTimer.md)
+- [Reset Num Of Emitted Particles](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/resetNumOfEmittedParticles.md)
+- [Set Emit Count Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setEmitCountScale.md)
+- [Set Emit Start Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setEmitStartTime.md)
+- [Set Emit Stop Time](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setEmitStopTime.md)
+- [Set Emitter Shape](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setEmitterShape.md)
+- [Set Emitter Shape Velocity Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setEmitterShapeVelocityScale.md)
+- [Set Emitting State](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setEmittingState.md)
+- [Set Max Num Of Particles](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setMaxNumOfParticles.md)
+- [Set Num Of Particles To Emit Per Ms](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setNumOfParticlesToEmitPerMs.md)
+- [Set Particle Shape](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleShape.md)
+- [Set Particle System Damping](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemDamping.md)
+- [Set Particle System Lifespan](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemLifespan.md)
+- [Set Particle System Normal Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemNormalSpeed.md)
+- [Set Particle System Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemSpeed.md)
+- [Set Particle System Speed Random](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemSpeedRandom.md)
+- [Set Particle System Sprite Scale X](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemSpriteScaleX.md)
+- [Set Particle System Sprite Scale XGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemSpriteScaleXGain.md)
+- [Set Particle System Sprite Scale Y](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemSpriteScaleY.md)
+- [Set Particle System Sprite Scale YGain](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemSpriteScaleYGain.md)
+- [Set Particle System Tangent Speed](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemTangentSpeed.md)
+- [Set Particle System Time Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Particle%20System/setParticleSystemTimeScale.md)
 
 ### Physics
 
@@ -953,100 +911,59 @@
 
 ### Terrain Detail
 
-- [Terrain Detail](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain Detail/Terrain
-  Detail.md)
-- [Clear Terrain Fill Layers](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/clearTerrainFillLayers.md)
-- [Finalize Terrain Fill Layers](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/finalizeTerrainFillLayers.md)
-- [Get Data Plane Associated Transform Group](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDataPlaneAssociatedTransformGroup.md)
-- [Get Density At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityAtWorldPos.md)
-- [Get Density Height At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityHeightAtWorldPos.md)
-- [Get Density Map Size](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityMapSize.md)
-- [Get Density Map Syncer Cell Indices At World Position](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityMapSyncerCellIndicesAtWorldPosition.md)
-- [Get Density Normal At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityNormalAtWorldPos.md)
-- [Get Density States At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityStatesAtWorldPos.md)
-- [Get Density Type Index At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getDensityTypeIndexAtWorldPos.md)
-- [Get Foliage Transform Group Id By Foliage Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getFoliageTransformGroupIdByFoliageName.md)
-- [Get Terrain Data Plane By Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getTerrainDataPlaneByName.md)
-- [Get Terrain Detail By Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getTerrainDetailByName.md)
-- [Get Terrain Detail Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getTerrainDetailName.md)
-- [Get Terrain Detail Num Channels](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getTerrainDetailNumChannels.md)
-- [Get Terrain Detail Type Index](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getTerrainDetailTypeIndex.md)
-- [Get Terrain Size](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/getTerrainSize.md)
-- [Set Density Map Syncer Cell Changed Callback](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/setDensityMapSyncerCellChangedCallback.md)
-- [Set Enable Density Map Syncer Cell Changed Callback](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/setEnableDensityMapSyncerCellChangedCallback.md)
-- [Set Terrain Fill Visual Height](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain
-  Detail/setTerrainFillVisualHeight.md)
+- [Terrain Detail](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/Terrain%20Detail.md)
+- [Clear Terrain Fill Layers](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/clearTerrainFillLayers.md)
+- [Finalize Terrain Fill Layers](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/finalizeTerrainFillLayers.md)
+- [Get Data Plane Associated Transform Group](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDataPlaneAssociatedTransformGroup.md)
+- [Get Density At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityAtWorldPos.md)
+- [Get Density Height At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityHeightAtWorldPos.md)
+- [Get Density Map Size](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityMapSize.md)
+- [Get Density Map Syncer Cell Indices At World Position](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityMapSyncerCellIndicesAtWorldPosition.md)
+- [Get Density Normal At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityNormalAtWorldPos.md)
+- [Get Density States At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityStatesAtWorldPos.md)
+- [Get Density Type Index At World Pos](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getDensityTypeIndexAtWorldPos.md)
+- [Get Foliage Transform Group Id By Foliage Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getFoliageTransformGroupIdByFoliageName.md)
+- [Get Terrain Data Plane By Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getTerrainDataPlaneByName.md)
+- [Get Terrain Detail By Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getTerrainDetailByName.md)
+- [Get Terrain Detail Name](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getTerrainDetailName.md)
+- [Get Terrain Detail Num Channels](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getTerrainDetailNumChannels.md)
+- [Get Terrain Detail Type Index](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getTerrainDetailTypeIndex.md)
+- [Get Terrain Size](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/getTerrainSize.md)
+- [Set Density Map Syncer Cell Changed Callback](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/setDensityMapSyncerCellChangedCallback.md)
+- [Set Enable Density Map Syncer Cell Changed Callback](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/setEnableDensityMapSyncerCellChangedCallback.md)
+- [Set Terrain Fill Visual Height](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Terrain%20Detail/setTerrainFillVisualHeight.md)
 
 ### Text Rendering
 
-- [Text Rendering](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text Rendering/Text
-  Rendering.md)
-- [Get Text3DWidth](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/getText3DWidth.md)
-- [Get Text Height](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/getTextHeight.md)
-- [Get Text Length](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/getTextLength.md)
-- [Get Text Line Length](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/getTextLineLength.md)
-- [Get Text Width](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/getTextWidth.md)
-- [Render Text](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text Rendering/renderText.md)
-- [Set Text Alignment](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextAlignment.md)
-- [Set Text Bold](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextBold.md)
-- [Set Text Clip Area](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextClipArea.md)
-- [Set Text Color](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextColor.md)
-- [Set Text Depth Test Enabled](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextDepthTestEnabled.md)
-- [Set Text First Line Indentation](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextFirstLineIndentation.md)
-- [Set Text Line Bounds](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextLineBounds.md)
-- [Set Text Line Height Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextLineHeightScale.md)
-- [Set Text Rotation](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextRotation.md)
-- [Set Text Vertical Alignment](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextVerticalAlignment.md)
-- [Set Text Width Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextWidthScale.md)
-- [Set Text Wrap Width](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text
-  Rendering/setTextWrapWidth.md)
+- [Text Rendering](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/Text%20Rendering.md)
+- [Get Text3DWidth](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/getText3DWidth.md)
+- [Get Text Height](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/getTextHeight.md)
+- [Get Text Length](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/getTextLength.md)
+- [Get Text Line Length](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/getTextLineLength.md)
+- [Get Text Width](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/getTextWidth.md)
+- [Render Text](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/renderText.md)
+- [Set Text Alignment](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextAlignment.md)
+- [Set Text Bold](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextBold.md)
+- [Set Text Clip Area](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextClipArea.md)
+- [Set Text Color](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextColor.md)
+- [Set Text Depth Test Enabled](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextDepthTestEnabled.md)
+- [Set Text First Line Indentation](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextFirstLineIndentation.md)
+- [Set Text Line Bounds](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextLineBounds.md)
+- [Set Text Line Height Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextLineHeightScale.md)
+- [Set Text Rotation](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextRotation.md)
+- [Set Text Vertical Alignment](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextVerticalAlignment.md)
+- [Set Text Width Scale](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextWidthScale.md)
+- [Set Text Wrap Width](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Text%20Rendering/setTextWrapWidth.md)
 
 ### Tire Track
 
-- [Tire Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire Track/Tire Track.md)
-- [Create Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire Track/createTrack.md)
-- [Create Tyre Track System](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire
-  Track/createTyreTrackSystem.md)
-- [Cut Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire Track/cutTrack.md)
-- [Destroy Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire Track/destroyTrack.md)
-- [Erase Parallelogram](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire
-  Track/eraseParallelogram.md)
-- [Erase Polygon](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire Track/erasePolygon.md)
+- [Tire Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/Tire%20Track.md)
+- [Create Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/createTrack.md)
+- [Create Tyre Track System](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/createTyreTrackSystem.md)
+- [Cut Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/cutTrack.md)
+- [Destroy Track](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/destroyTrack.md)
+- [Erase Parallelogram](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/eraseParallelogram.md)
+- [Erase Polygon](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/Tire%20Track/erasePolygon.md)
 
 ### Voicechat
 
@@ -1080,16 +997,16 @@
 - [Set XMLString](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/XML/setXMLString.md)
 - [Set XMLUInt](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/engine/XML/setXMLUInt.md)
 
+
 ## Foundation
 
 *7 pages*
 
 ### Input
 
-- [Gamepad_Joystick values](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Input/Gamepad_Joystick
-  values.md)
+- [Gamepad_Joystick values](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Input/Gamepad_Joystick%20values.md)
 - [Input](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Input/Input.md)
-- [Mouse values](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Input/Mouse values.md)
+- [Mouse values](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Input/Mouse%20values.md)
 
 ### Scenegraph
 
@@ -1097,6 +1014,7 @@
 - [Print Scenegraph](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Scenegraph/printScenegraph.md)
 - [Rotate](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Scenegraph/rotate.md)
 - [Toggle Visibility](https://github.com/umbraprior/FS25-Community-LUADOC/blob/main/docs/foundation/Scenegraph/toggleVisibility.md)
+
 
 ## Script
 

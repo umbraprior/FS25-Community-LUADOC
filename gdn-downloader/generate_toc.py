@@ -6,6 +6,7 @@ Generate a comprehensive table of contents for the FS25 LUADOC documentation.
 import os
 from pathlib import Path
 from collections import defaultdict
+from urllib.parse import quote
 
 # Base repository URL
 REPO_URL = "https://github.com/umbraprior/FS25-Community-LUADOC"
@@ -25,8 +26,15 @@ def sanitize_name(name):
     return name[0].upper() + name[1:] if name else name
 
 def get_file_link(relative_path):
-    """Generate GitHub blob URL for a file."""
-    return f"{REPO_URL}/blob/main/{relative_path.replace(os.sep, '/')}"
+    """Generate GitHub blob URL for a file with proper URL encoding."""
+    # Convert path separators to forward slashes
+    path_str = str(relative_path).replace(os.sep, '/')
+    # Split path into components and URL-encode each part
+    # This handles spaces and special characters in filenames
+    path_parts = path_str.split('/')
+    encoded_parts = [quote(part, safe='') for part in path_parts]
+    encoded_path = '/'.join(encoded_parts)
+    return f"{REPO_URL}/blob/main/{encoded_path}"
 
 def collect_docs(docs_path):
     """Collect all markdown files organized by directory structure."""

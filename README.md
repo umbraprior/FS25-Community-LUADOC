@@ -7,10 +7,10 @@ This repository contains comprehensive documentation for all Lua scripting APIs 
 > [!IMPORTANT]
 > [View Table of Contents](TABLE_OF_CONTENTS.md)
 
-The table of contents contains links to all ~1,700 documentation pages organized by category:
-- **Engine** - Core engine functions and APIs
-- **Foundation** - Foundation layer APIs
-- **Script** - Game scripting APIs and specializations
+| Metric | Count |
+|--------|-------|
+| **Total Pages** | **1,661** |
+| **Total Script Functions** | **11,102** |
 
 ## Contributing
 

@@ -6,100 +6,100 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* FS25 Theme Colors */
-  --fs-yellow-green: #AAC63C;
-  --fs-forest-moss: #76941D;
-  --fs-pine-teal: #144C41;
-  --fs-jet-black: #2E393C;
-  --fs-jet-black-2: #172325;
-  
-  /* Primary colors using FS25 theme */
-  --ifm-color-primary: #76941D;
-  --ifm-color-primary-dark: #5d7517;
-  --ifm-color-primary-darker: #556a15;
-  --ifm-color-primary-darkest: #455712;
-  --ifm-color-primary-light: #8aa823;
-  --ifm-color-primary-lighter: #8fb025;
-  --ifm-color-primary-lightest: #a5c42f;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    /* FS25 Theme Colors */
+    --fs-yellow-green: #AAC63C;
+    --fs-forest-moss: #76941D;
+    --fs-pine-teal: #144C41;
+    --fs-jet-black: #2E393C;
+    --fs-jet-black-2: #172325;
+
+    /* Primary colors using FS25 theme */
+    --ifm-color-primary: #76941D;
+    --ifm-color-primary-dark: #5d7517;
+    --ifm-color-primary-darker: #556a15;
+    --ifm-color-primary-darkest: #455712;
+    --ifm-color-primary-light: #8aa823;
+    --ifm-color-primary-lighter: #8fb025;
+    --ifm-color-primary-lightest: #a5c42f;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  /* FS25 Dark Mode Theme */
-  --ifm-background-color: #172325;
-  --ifm-background-surface-color: #2E393C;
-  --ifm-color-emphasis-0: #172325;
-  --ifm-color-emphasis-100: #2E393C;
-  --ifm-color-emphasis-200: #3a4a4d;
-  --ifm-color-emphasis-300: #465a5e;
-  
-  --ifm-color-primary: #AAC63C;
-  --ifm-color-primary-dark: #95b033;
-  --ifm-color-primary-darker: #8ba32f;
-  --ifm-color-primary-darkest: #728028;
-  --ifm-color-primary-light: #b5d045;
-  --ifm-color-primary-lighter: #b9d34d;
-  --ifm-color-primary-lightest: #c8e065;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    /* FS25 Dark Mode Theme */
+    --ifm-background-color: #172325;
+    --ifm-background-surface-color: #2E393C;
+    --ifm-color-emphasis-0: #172325;
+    --ifm-color-emphasis-100: #2E393C;
+    --ifm-color-emphasis-200: #3a4a4d;
+    --ifm-color-emphasis-300: #465a5e;
+
+    --ifm-color-primary: #AAC63C;
+    --ifm-color-primary-dark: #95b033;
+    --ifm-color-primary-darker: #8ba32f;
+    --ifm-color-primary-darkest: #728028;
+    --ifm-color-primary-light: #b5d045;
+    --ifm-color-primary-lighter: #b9d34d;
+    --ifm-color-primary-lightest: #c8e065;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 /* FS25 Theme Color Variables */
 :root {
-  --fs-yellow-green: #AAC63C;
-  --fs-forest-moss: #76941D;
-  --fs-pine-teal: #144C41;
-  --fs-jet-black: #2E393C;
-  --fs-jet-black-2: #172325;
-  --fs-gold: #FED500;
-  --fs-graphite: #2A2A2A;
+    --fs-yellow-green: #AAC63C;
+    --fs-forest-moss: #76941D;
+    --fs-pine-teal: #144C41;
+    --fs-jet-black: #2E393C;
+    --fs-jet-black-2: #172325;
+    --fs-gold: #FED500;
+    --fs-graphite: #2A2A2A;
 }
 
 [data-theme='dark'] {
-  --fs-yellow-green: #AAC63C;
-  --fs-forest-moss: #76941D;
-  --fs-pine-teal: #144C41;
-  --fs-jet-black: #2E393C;
-  --fs-jet-black-2: #172325;
-  --fs-gold: #FED500;
-  --fs-graphite: #2A2A2A;
+    --fs-yellow-green: #AAC63C;
+    --fs-forest-moss: #76941D;
+    --fs-pine-teal: #144C41;
+    --fs-jet-black: #2E393C;
+    --fs-jet-black-2: #172325;
+    --fs-gold: #FED500;
+    --fs-graphite: #2A2A2A;
 }
 
 /* Make footer subtle and minimal */
 footer {
-  padding: 1.5rem 0 !important;
-  font-size: 0.875rem !important;
-  opacity: 0.7;
+    padding: 1.5rem 0 !important;
+    font-size: 0.875rem !important;
+    opacity: 0.7;
 }
 
 /* Hide footer links sections */
 footer .footer__links {
-  display: none !important;
+    display: none !important;
 }
 
 footer .footer__copyright {
-  text-align: center;
-  color: var(--ifm-color-content-secondary);
-  font-size: 0.8rem;
-  margin-top: 0;
-  width: 100%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
+    text-align: center;
+    color: var(--ifm-color-content-secondary);
+    font-size: 0.8rem;
+    margin-top: 0;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
 }
 
 /* Replace the copyright text content */
 footer .footer__copyright {
-  font-size: 0;
-  position: relative;
+    font-size: 0;
+    position: relative;
 }
 
 footer .footer__copyright::before {
-  content: "This is an open source community project and does not own any associated rights. Farming Simulator 25 and related trademarks are property of Giants Software. Built with Docusaurus.";
-  font-size: 0.8rem;
-  display: block;
-  color: var(--ifm-color-content-secondary);
+    content: "This is an open source community project and does not own any associated rights. Farming Simulator 25 and related trademarks are property of Giants Software. Built with Docusaurus.";
+    font-size: 0.8rem;
+    display: block;
+    color: var(--ifm-color-content-secondary);
 }
 

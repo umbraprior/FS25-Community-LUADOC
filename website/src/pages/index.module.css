@@ -4,542 +4,539 @@
  */
 
 .heroBanner {
-  padding: 7rem 0 6rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-image: 
-    linear-gradient(to right, rgba(20, 76, 65, 0.3) 0%, transparent 15%, transparent 85%, rgba(20, 76, 65, 0.3) 100%),
+    padding: 7rem 0 6rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(20, 76, 65, 0.3) 0%, transparent 15%, transparent 85%, rgba(20, 76, 65, 0.3) 100%),
     url('../../static/img/hero-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--fs-pine-teal);
-  animation: fadeIn 0.6s ease-out;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--fs-pine-teal);
+    animation: fadeIn 0.6s ease-out;
 }
 
 .heroBanner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
     radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
-  pointer-events: none;
-  animation: shimmer 8s ease-in-out infinite;
+    pointer-events: none;
+    animation: shimmer 8s ease-in-out infinite;
 }
 
 .heroBanner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
-  pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+    pointer-events: none;
 }
 
 @keyframes shimmer {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
 }
 
 .heroTitle {
-  margin-bottom: 1.5rem !important;
-  animation: fadeInUp 0.8s ease-out !important;
-  position: relative !important;
-  z-index: 2 !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 1rem !important;
-  flex-wrap: wrap !important;
+    margin-bottom: 1.5rem !important;
+    animation: fadeInUp 0.8s ease-out !important;
+    position: relative !important;
+    z-index: 2 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
 }
 
 .heroLogo {
-  height: 6.5rem !important;
-  width: auto !important;
-  max-width: 100% !important;
-  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 30px rgba(170, 198, 60, 0.2)) !important;
-  object-fit: contain !important;
+    height: 6.5rem !important;
+    width: auto !important;
+    max-width: 100% !important;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 30px rgba(170, 198, 60, 0.2)) !important;
+    object-fit: contain !important;
 }
 
 .heroTitleText {
-  font-size: 4rem !important;
-  font-weight: 900 !important;
-  color: var(--fs-gold) !important;
-  letter-spacing: -0.02em !important;
-  line-height: 1.1 !important;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.9) !important;
-  text-transform: none !important;
+    font-size: 4rem !important;
+    font-weight: 900 !important;
+    color: var(--fs-gold) !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.1 !important;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.9) !important;
+    text-transform: none !important;
 }
 
 .heroSubtitle {
-  font-size: 1.5rem !important;
-  font-weight: 500 !important;
-  margin-bottom: 3rem !important;
-  color: rgba(255, 255, 255, 0.98) !important;
-  max-width: 750px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  animation: fadeInUp 0.8s ease-out 0.2s both !important;
-  line-height: 1.7 !important;
-  position: relative !important;
-  z-index: 2 !important;
-  text-shadow: 
-    0 2px 8px rgba(0, 0, 0, 0.4),
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 3rem !important;
+    color: rgba(255, 255, 255, 0.98) !important;
+    max-width: 750px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    animation: fadeInUp 0.8s ease-out 0.2s both !important;
+    line-height: 1.7 !important;
+    position: relative !important;
+    z-index: 2 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4),
     0 0 20px rgba(170, 198, 60, 0.15),
     0 1px 3px rgba(0, 0, 0, 0.5) !important;
-  letter-spacing: 0.01em !important;
-  text-transform: none !important;
+    letter-spacing: 0.01em !important;
+    text-transform: none !important;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 5rem 1.5rem 4rem;
-  }
-  
-  .heroTitle {
-    margin-bottom: 1.25rem !important;
-  }
-  
-  .heroLogo {
-    height: 4.5rem !important;
-  }
-  
-  .heroTitleText {
-    font-size: 2.75rem !important;
-  }
-  
-  .heroSubtitle {
-    font-size: 1.2rem !important;
-    margin-bottom: 2.5rem !important;
-  }
-  
-  .buttons {
-    gap: 1rem;
-  }
-  
-  .customButton {
-    font-size: 0.95rem !important;
-    padding: 0.875rem 1.5rem !important;
-  }
+    .heroBanner {
+        padding: 5rem 1.5rem 4rem;
+    }
+
+    .heroTitle {
+        margin-bottom: 1.25rem !important;
+    }
+
+    .heroLogo {
+        height: 4.5rem !important;
+    }
+
+    .heroTitleText {
+        font-size: 2.75rem !important;
+    }
+
+    .heroSubtitle {
+        font-size: 1.2rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+
+    .buttons {
+        gap: 1rem;
+    }
+
+    .customButton {
+        font-size: 0.95rem !important;
+        padding: 0.875rem 1.5rem !important;
+    }
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-  animation: fadeInUp 0.8s ease-out 0.4s both;
-  position: relative;
-  z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+    position: relative;
+    z-index: 1;
 }
 
 .customButton {
-  width: auto !important;
-  height: auto !important;
-  position: relative !important;
-  display: block !important;
-  overflow: hidden !important;
-  padding: 1rem 2rem !important;
-  text-align: center !important;
-  background: rgba(255, 255, 255, 0.95) !important;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
-  text-transform: uppercase !important;
-  font-weight: 900 !important;
-  font-size: 1.1rem !important;
-  color: #000000 !important;
-  text-decoration: none !important;
-  border: none !important;
-  backdrop-filter: blur(10px) !important;
-  border-radius: 0 !important;
-  cursor: pointer !important;
-  outline: none !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
-  transition: background-image 0.4s ease 0.25s, box-shadow 0.3s ease !important;
+    width: auto !important;
+    height: auto !important;
+    position: relative !important;
+    display: block !important;
+    overflow: hidden !important;
+    padding: 1rem 2rem !important;
+    text-align: center !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+    text-transform: uppercase !important;
+    font-weight: 900 !important;
+    font-size: 1.1rem !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+    border: none !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    outline: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    transition: background-image 0.4s ease 0.25s, box-shadow 0.3s ease !important;
 }
 
 /* Border animation - bottom and left (starts from bottom-left, slides in from right) */
 .customButton::before {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  border-bottom: 4px solid transparent;
-  border-left: 4px solid transparent;
-  box-sizing: border-box;
-  transform: translateX(100%);
-  z-index: 1;
-  pointer-events: none;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 /* Border animation - top and right (starts from top-left, slides in from left) */
 .customButton::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-top: 4px solid transparent;
-  border-right: 4px solid transparent;
-  box-sizing: border-box;
-  transform: translateX(-100%);
-  z-index: 1;
-  pointer-events: none;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .customButton:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
-  color: var(--fs-gold) !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
-  background-image: linear-gradient(135deg, var(--fs-yellow-green) 0%, var(--fs-pine-teal) 40%) !important;
-  transform: none !important;
-  transition: background-image 0.5s ease 0.1s, color 0.3s, text-shadow 0.3s, box-shadow 0.3s ease !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+    color: var(--fs-gold) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+    background-image: linear-gradient(135deg, var(--fs-yellow-green) 0%, var(--fs-pine-teal) 40%) !important;
+    transform: none !important;
+    transition: background-image 0.5s ease 0.1s, color 0.3s, text-shadow 0.3s, box-shadow 0.3s ease !important;
 }
 
 .customButton:hover::before {
-  border-color: var(--fs-yellow-green) !important;
-  height: 100% !important;
-  transform: translateX(0) !important;
-  transition: 0.2s transform linear, 0.2s height linear 0.15s, 0.2s border-color linear !important;
+    border-color: var(--fs-yellow-green) !important;
+    height: 100% !important;
+    transform: translateX(0) !important;
+    transition: 0.2s transform linear, 0.2s height linear 0.15s, 0.2s border-color linear !important;
 }
 
 .customButton:hover::after {
-  border-color: var(--fs-yellow-green) !important;
-  height: 100% !important;
-  transform: translateX(0) !important;
-  transition: 0.2s transform linear, 0.2s height linear 0.25s, 0.2s border-color linear !important;
+    border-color: var(--fs-yellow-green) !important;
+    height: 100% !important;
+    transform: translateX(0) !important;
+    transition: 0.2s transform linear, 0.2s height linear 0.25s, 0.2s border-color linear !important;
 }
 
 .customButton:active {
-  transform: scale(0.98) !important;
+    transform: scale(0.98) !important;
 }
 
 /* Ensure text content is above border animations */
 .customButton::before {
-  z-index: 1 !important;
+    z-index: 1 !important;
 }
 
 .customButton::after {
-  z-index: 1 !important;
+    z-index: 1 !important;
 }
 
 .buttonText {
-  position: relative;
-  z-index: 10 !important;
-  display: inline-block;
+    position: relative;
+    z-index: 10 !important;
+    display: inline-block;
 }
 
 .stats {
-  padding: 5rem 0;
-  background: linear-gradient(to bottom, var(--ifm-background-color) 0%, var(--ifm-color-emphasis-50) 100%);
-  animation: fadeInUp 0.8s ease-out;
-  position: relative;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, var(--ifm-background-color) 0%, var(--ifm-color-emphasis-50) 100%);
+    animation: fadeInUp 0.8s ease-out;
+    position: relative;
 }
 
 .stats::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--ifm-color-emphasis-300), transparent);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--ifm-color-emphasis-300), transparent);
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .statCard {
-  text-align: center;
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--ifm-color-emphasis-50) 100%);
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06);
-  animation: fadeInScale 0.6s ease-out;
-  animation-fill-mode: both;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid var(--ifm-color-emphasis-200);
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, var(--ifm-background-color) 0%, var(--ifm-color-emphasis-50) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06);
+    animation: fadeInScale 0.6s ease-out;
+    animation-fill-mode: both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .statCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .statCard:nth-child(1) {
-  animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 .statCard:nth-child(2) {
-  animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 @keyframes fadeInScale {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .statCard h2 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #76941D 0%, #AAC63C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.75rem;
-  min-height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: -0.02em;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #76941D 0%, #AAC63C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.75rem;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.02em;
 }
 
 .animatedNumber {
-  display: inline-block;
+    display: inline-block;
 }
 
 .statCard p {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--ifm-color-content);
-  animation: fadeIn 0.8s ease-out;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
-  margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--ifm-color-content);
+    animation: fadeIn 0.8s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    margin: 0;
 }
 
 .features {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .featureCard {
-  padding: 2rem;
-  text-align: center;
-  height: 100%;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
 }
 
 .featureCard h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .featureCard p {
-  color: var(--ifm-color-content-secondary);
-  margin-bottom: 1.5rem;
+    color: var(--ifm-color-content-secondary);
+    margin-bottom: 1.5rem;
 }
 
 .featureCard a {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .officialGame {
-  padding: 5rem 0;
-  background: linear-gradient(to bottom, var(--ifm-color-emphasis-50) 0%, var(--ifm-background-color) 100%);
-  position: relative;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, var(--ifm-color-emphasis-50) 0%, var(--ifm-background-color) 100%);
+    position: relative;
 }
 
 .officialGame::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--ifm-color-emphasis-300), transparent);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--ifm-color-emphasis-300), transparent);
 }
 
 .sectionTitle {
-  text-align: center;
-  font-size: 2.75rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #76941D 0%, #AAC63C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
-  animation: fadeInUp 0.6s ease-out;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #76941D 0%, #AAC63C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .sectionDescription {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--ifm-color-content);
-  margin-bottom: 3.5rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-  animation: fadeInUp 0.6s ease-out 0.2s both;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--ifm-color-content);
+    margin-bottom: 3.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
 .streamingCards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  animation: fadeInUp 0.6s ease-out 0.3s both;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeInUp 0.6s ease-out 0.3s both;
 }
 
 .streamingCard {
-  position: relative;
-  width: 140px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
-              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 140px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .streamingCard:hover {
-  transform: scale(1.05) translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .cardOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
-  padding: 1rem;
-  color: white;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+    padding: 1rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
 }
 
 .streamingCard:hover .cardOverlay {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .cardOverlay h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cardOverlay p {
-  font-size: 0.85rem;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  line-height: 1.4;
+    font-size: 0.85rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
 }
 
 @media screen and (max-width: 996px) {
-  .officialGame {
-    padding: 2rem 0;
-  }
-  
-  .sectionTitle {
-    font-size: 2rem;
-  }
-  
-  .sectionDescription {
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
-  }
-  
-  .stats {
-    padding: 3rem 0;
-  }
-  
-  .statCard {
-    padding: 2rem 1.5rem;
-  }
-  
-  .statCard h2 {
-    font-size: 2.5rem;
-    min-height: 3rem;
-  }
-  
-  .statCard p {
-    font-size: 1.1rem;
-  }
-  
-  .streamingCards {
-    gap: 1rem;
-  }
-  
-  .streamingCard {
-    width: 120px;
-    height: 171px;
-  }
-  
-  .cardOverlay {
-    padding: 0.75rem;
-  }
-  
-  .cardOverlay h3 {
-    font-size: 0.95rem;
-  }
-  
-  .cardOverlay p {
-    font-size: 0.75rem;
-  }
+    .officialGame {
+        padding: 2rem 0;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .sectionDescription {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .stats {
+        padding: 3rem 0;
+    }
+
+    .statCard {
+        padding: 2rem 1.5rem;
+    }
+
+    .statCard h2 {
+        font-size: 2.5rem;
+        min-height: 3rem;
+    }
+
+    .statCard p {
+        font-size: 1.1rem;
+    }
+
+    .streamingCards {
+        gap: 1rem;
+    }
+
+    .streamingCard {
+        width: 120px;
+        height: 171px;
+    }
+
+    .cardOverlay {
+        padding: 0.75rem;
+    }
+
+    .cardOverlay h3 {
+        font-size: 0.95rem;
+    }
+
+    .cardOverlay p {
+        font-size: 0.75rem;
+    }
 }
 
 /* Smooth scrolling and modern main container */
 main {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Improve overall spacing and transitions */
 .container {
-  transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 

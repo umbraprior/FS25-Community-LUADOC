@@ -7,7 +7,8 @@
 **Definition**
 
 > buildNavMesh(entityId navMeshId, entityId worldNode, float cellSize, float cellHeight, float agentHeight, float
-> agentRadius, float agentMaxClimb, float agentMaxSlope, float minRegionSize, float mergeRegionSize, float maxEdgeLength,
+> agentRadius, float agentMaxClimb, float agentMaxSlope, float minRegionSize, float mergeRegionSize, float
+> maxEdgeLength,
 > float maxSimplificationError, integer navMeshBuildMask, entityId terrainDetail, string terrainCullInfoLayer, integer
 > terrainCullInfoLayerChannels)
 

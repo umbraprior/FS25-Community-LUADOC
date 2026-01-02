@@ -1,15 +1,16 @@
 # FS25 Community LUADOC
 
-This repository contains comprehensive documentation for all Lua scripting APIs available in Farming Simulator 25. All of the original documentation was converted to markdown format via script for easier reading and keeping.
+This repository contains comprehensive documentation for all Lua scripting APIs available in Farming Simulator 25. All
+of the original documentation was converted to markdown format via script for easier reading and keeping.
 
 ## Documentation
 
 > [!IMPORTANT]
 > [View Table of Contents](TABLE_OF_CONTENTS.md)
 
-| Metric | Count |
-|--------|-------|
-| **Total Pages** | **1,661** |
+| Metric                     | Count      |
+|----------------------------|------------|
+| **Total Pages**            | **1,661**  |
 | **Total Script Functions** | **11,102** |
 
 ## Contributing

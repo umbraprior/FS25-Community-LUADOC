@@ -83,7 +83,8 @@ function AIVehicleUtil.driveAlongCurvature( self , dt, curvature, maxSpeed, acce
 **Definition**
 
 > driveInDirection(table self, float dt, float steeringAngleLimit, float acceleration, float slowAcceleration, float
-> slowAngleLimit, boolean allowedToDrive, boolean moveForwards, float lx, float lz, float maxSpeed, float slowDownFactor)
+> slowAngleLimit, boolean allowedToDrive, boolean moveForwards, float lx, float lz, float maxSpeed, float
+> slowDownFactor)
 
 **Arguments**
 

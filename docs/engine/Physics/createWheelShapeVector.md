@@ -8,7 +8,8 @@
 
 > createWheelShapeVector(entityId transformId, vector position, float radius, float suspensionTravel, float spring,
 > float damperCompressionLowSpeed, float damperCompressionHighSpeed, float damperCompressionLowSpeedThreshold, float
-> damperRelaxationLowSpeed, float damperRelaxationHighSpeed, float damperRelaxationLowSpeedThreshold, float mass, integer
+> damperRelaxationLowSpeed, float damperRelaxationHighSpeed, float damperRelaxationLowSpeedThreshold, float mass,
+> integer
 > collisionGroup, integer collisionMask, integer wheelShapeIndex)
 
 **Arguments**

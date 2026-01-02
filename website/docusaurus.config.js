@@ -101,6 +101,7 @@ const config = {
       {
         languages: ['en'],
         indexBaseUrl: true,
+        maxIndexSize: 10000000,
       },
     ],
   ],

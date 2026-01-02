@@ -23,6 +23,7 @@ const config = {
   projectName: 'FS25-Community-LUADOC', // Usually your repo name.
 
   onBrokenLinks: 'warn',
+  onBrokenAnchors: 'warn',
   markdown: {
     format: 'detect', // Use CommonMark for .md files (no JSX parsing), MDX for .mdx files
   },

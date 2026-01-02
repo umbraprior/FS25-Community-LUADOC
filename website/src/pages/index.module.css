@@ -1,0 +1,150 @@
+/**
+ * CSS files with the .module.css extension will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stats {
+  padding: 4rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.statCard {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--ifm-background-color);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.statCard h2 {
+  font-size: 3rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.statCard p {
+  font-size: 1.2rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.features {
+  padding: 4rem 0;
+}
+
+.featureCard {
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureCard p {
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.featureCard a {
+  font-weight: 600;
+}
+
+.officialGame {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.sectionDescription {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkCard {
+  padding: 2rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.linkCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.linkCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-heading-color);
+}
+
+.linkCard p {
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.linkCardLinks {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 996px) {
+  .officialGame {
+    padding: 2rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .linkCard {
+    margin-bottom: 1.5rem;
+  }
+}
+
+

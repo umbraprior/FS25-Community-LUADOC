@@ -1,0 +1,226 @@
+.floatingButton {
+    position: fixed;
+    bottom: 5.5rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--fs-pine-teal-95);
+    border: 2px solid var(--fs-yellow-green);
+    color: var(--fs-gold);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 0 0 0 rgba(254, 213, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.floatingButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4),
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(254, 213, 0, 0.5),
+    0 0 40px rgba(254, 213, 0, 0.3);
+    background: var(--fs-pine-teal-95);
+    border-color: var(--fs-gold);
+    border-width: 3px;
+    color: var(--fs-gold);
+}
+
+.floatingButton:active {
+    transform: scale(0.95);
+}
+
+.floatingButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.2s ease-out;
+    backdrop-filter: blur(4px);
+}
+
+.modalContent {
+    background: var(--fs-pine-teal-98);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 2px var(--fs-yellow-green),
+    0 0 20px rgba(254, 213, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+    animation: slideUp 0.3s ease-out;
+    border: 2px solid var(--fs-yellow-green);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--fs-yellow-green);
+    position: relative;
+}
+
+.modalHeader::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--fs-gold);
+}
+
+.modalHeader h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--fs-gold);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--ifm-color-content-secondary);
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.closeButton:hover {
+    background: rgba(170, 198, 60, 0.2);
+    color: var(--fs-gold);
+}
+
+.modalBody {
+    padding: 1.5rem;
+}
+
+.modalBody p {
+    margin: 0 0 1.5rem 0;
+    color: var(--ifm-color-content);
+    line-height: 1.6;
+}
+
+.modalActions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.editButton {
+    background: var(--fs-pine-teal-80);
+    border: 2px solid var(--fs-yellow-green);
+    color: var(--fs-gold);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.editButton:hover {
+    background: var(--fs-pine-teal-95);
+    border-color: var(--fs-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(254, 213, 0, 0.4),
+    0 0 30px rgba(254, 213, 0, 0.2);
+    color: var(--fs-gold);
+}
+
+.cancelButton {
+    padding: 0.75rem 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .floatingButton {
+        bottom: 5rem;
+        right: 1.5rem;
+        width: 48px;
+        height: 48px;
+    }
+
+    .floatingButton svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .modalContent {
+        width: 95%;
+        margin: 1rem;
+    }
+
+    .modalHeader {
+        padding: 1rem;
+    }
+
+    .modalBody {
+        padding: 1rem;
+    }
+
+    .modalActions {
+        flex-direction: column;
+    }
+
+    .editButton,
+    .cancelButton {
+        width: 100%;
+    }
+}
+

@@ -21,7 +21,7 @@ const sidebars = {
             link: {
                 type: 'generated-index',
                 title: 'Engine Documentation',
-                description: 'Core engine functions and low-level APIs',
+                description: '884 pages',
                 slug: '/engine',
             },
             items: [
@@ -37,7 +37,7 @@ const sidebars = {
             link: {
                 type: 'generated-index',
                 title: 'Foundation Documentation',
-                description: 'Foundation layer APIs and utilities',
+                description: '7 pages',
                 slug: '/foundation',
             },
             items: [
@@ -53,7 +53,7 @@ const sidebars = {
             link: {
                 type: 'generated-index',
                 title: 'Script Documentation',
-                description: 'Game scripting APIs, classes, and specializations',
+                description: '770 pages',
                 slug: '/script',
             },
             items: [

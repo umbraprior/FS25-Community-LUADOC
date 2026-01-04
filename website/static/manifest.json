@@ -1,0 +1,27 @@
+{
+  "name": "FS25 Community LUADOC",
+  "short_name": "FS25 LUADOC",
+  "description": "Comprehensive documentation for all Lua scripting APIs available in Farming Simulator 25",
+  "start_url": "/FS25-Community-LUADOC/",
+  "scope": "/FS25-Community-LUADOC/",
+  "display": "standalone",
+  "theme_color": "#194840",
+  "background_color": "#172325",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/FS25-Community-LUADOC/img/icon_FS25-COMMUNITY-LUADOC.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "documentation",
+    "education",
+    "developer"
+  ],
+  "lang": "en",
+  "dir": "ltr"
+}
+

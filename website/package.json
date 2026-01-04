@@ -11,22 +11,29 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "analyze": "docusaurus build && npx webpack-bundle-analyzer build/assets/js/*.js"
   },
   "dependencies": {
     "@docusaurus/core": "^3.5.0",
+    "@docusaurus/plugin-pwa": "^3.9.2",
     "@docusaurus/preset-classic": "^3.5.0",
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.1.1",
     "docusaurus-lunr-search": "^3.6.1",
     "prism-react-renderer": "^2.3.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "workbox-webpack-plugin": "^7.4.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.5.0",
     "@docusaurus/types": "^3.5.0",
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^2.0.3",
+    "webpack-bundle-analyzer": "^4.10.1"
   },
   "browserslist": {
     "production": [

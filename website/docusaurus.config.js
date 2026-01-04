@@ -49,7 +49,9 @@ const config = {
                     // Show last update time
                     showLastUpdateTime: true,
                     // Show last update author
-                    showLastUpdateAuthor: false,
+                    showLastUpdateAuthor: true,
+                    // Add "Edit this page" link
+                    editUrl: 'https://github.com/umbraprior/FS25-Community-LUADOC/edit/main/docs/',
                 },
                 blog: false,
                 theme: {
@@ -62,8 +64,24 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            // Set dark mode as default
+            colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: false,
+                respectPrefersColorScheme: false,
+            },
             // Replace with your project's social card
             image: 'img/icon_FS25-COMMUNITY-LUADOC.png',
+            metadata: [
+                {
+                    name: 'keywords',
+                    content: 'Farming Simulator 25, FS25, Lua, Scripting, API, Documentation, Modding, Giants Software'
+                },
+                {name: 'author', content: 'FS25 Community'},
+            ],
+            // Open Graph and Twitter Card metadata
+            ogImage: 'img/icon_FS25-COMMUNITY-LUADOC.png',
+            twitterImage: 'img/icon_FS25-COMMUNITY-LUADOC.png',
             navbar: {
                 title: 'FS25 Community LUADOC',
                 logo: {
@@ -103,6 +121,37 @@ const config = {
                 languages: ['en'],
                 indexBaseUrl: true,
                 maxIndexSize: 10000000,
+            },
+        ],
+        [
+            '@docusaurus/plugin-pwa',
+            {
+                debug: false,
+                offlineModeActivationStrategies: [
+                    'appInstalled',
+                    'standalone',
+                    'queryString',
+                ],
+                // The plugin automatically handles baseUrl, so we don't need to hardcode paths
+                pwaHead: [
+                    {
+                        tagName: 'link',
+                        rel: 'icon',
+                        href: '/FS25-Community-LUADOC/img/icon_FS25-COMMUNITY-LUADOC.png',
+                    },
+                    {
+                        tagName: 'link',
+                        rel: 'manifest',
+                        href: '/FS25-Community-LUADOC/manifest.json',
+                    },
+                    {
+                        tagName: 'meta',
+                        name: 'theme-color',
+                        content: '#194840',
+                    },
+                ],
+                swCustom: undefined,
+                swRegister: require.resolve('./src/swRegister.js'),
             },
         ],
     ],

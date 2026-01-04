@@ -9,7 +9,7 @@
     /* FS25 Theme Colors */
     --fs-yellow-green: #AAC63C;
     --fs-forest-moss: #76941D;
-    --fs-pine-teal: #144C41;
+    --fs-pine-teal: #194840;
     --fs-jet-black: #2E393C;
     --fs-jet-black-2: #172325;
 
@@ -49,28 +49,57 @@
 :root {
     --fs-yellow-green: #AAC63C;
     --fs-forest-moss: #76941D;
-    --fs-pine-teal: #144C41;
+    --fs-pine-teal: #194840;
     --fs-jet-black: #2E393C;
     --fs-jet-black-2: #172325;
     --fs-gold: #FED500;
     --fs-graphite: #2A2A2A;
+
+    /* Pine-teal with consistent opacity levels */
+    --fs-pine-teal-rgb: 25, 72, 64;
+    --fs-pine-teal-15: rgba(25, 72, 64, 0.15);
+    --fs-pine-teal-80: rgba(25, 72, 64, 0.8);
+    --fs-pine-teal-90: rgba(25, 72, 64, 0.9);
+    --fs-pine-teal-95: rgba(25, 72, 64, 0.95);
+    --fs-pine-teal-98: rgba(25, 72, 64, 0.98);
 }
 
 [data-theme='dark'] {
     --fs-yellow-green: #AAC63C;
     --fs-forest-moss: #76941D;
-    --fs-pine-teal: #144C41;
+    --fs-pine-teal: #194840;
     --fs-jet-black: #2E393C;
     --fs-jet-black-2: #172325;
     --fs-gold: #FED500;
     --fs-graphite: #2A2A2A;
+
+    /* Pine-teal with consistent opacity levels */
+    --fs-pine-teal-rgb: 25, 72, 64;
+    --fs-pine-teal-15: rgba(25, 72, 64, 0.15);
+    --fs-pine-teal-80: rgba(25, 72, 64, 0.8);
+    --fs-pine-teal-90: rgba(25, 72, 64, 0.9);
+    --fs-pine-teal-95: rgba(25, 72, 64, 0.95);
+    --fs-pine-teal-98: rgba(25, 72, 64, 0.98);
 }
 
-/* Make footer subtle and minimal */
+/* Make footer subtle and minimal with pine-teal theme */
 footer {
     padding: 1.5rem 0 !important;
     font-size: 0.875rem !important;
-    opacity: 0.7;
+    background: var(--fs-pine-teal-15) !important;
+    border-top: 2px solid var(--fs-yellow-green) !important;
+    position: relative !important;
+}
+
+footer::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -2px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100px !important;
+    height: 2px !important;
+    background: var(--fs-gold) !important;
 }
 
 /* Hide footer links sections */
@@ -100,6 +129,917 @@ footer .footer__copyright::before {
     content: "This is an open source community project and does not own any associated rights. Farming Simulator 25 and related trademarks are property of Giants Software. Built with Docusaurus.";
     font-size: 0.8rem;
     display: block;
-    color: var(--ifm-color-content-secondary);
+    color: var(--ifm-color-content);
+    opacity: 0.9;
 }
+
+/* Replace "items" with "pages" in DocCard footer */
+.theme-doc-card .card__footer {
+    position: relative;
+}
+
+.theme-doc-card .card__footer > * {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.theme-doc-card .card__footer::before {
+    content: attr(data-item-count) " pages";
+    font-size: 0.875rem;
+    display: block;
+    color: var(--ifm-color-content-secondary);
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.5;
+}
+
+/* ============================================
+   Accessibility Improvements
+   ============================================ */
+
+/* Skip to content link - hidden by default, visible when focused */
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 9999;
+    padding: 0.75rem 1.5rem;
+    background: var(--ifm-color-primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: left 0.1s ease-in-out;
+}
+
+.skip-to-content:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 3px solid var(--ifm-color-primary-lightest);
+    outline-offset: 2px;
+}
+
+/* Improved focus indicators for all interactive elements */
+*:focus-visible {
+    outline: 2px solid var(--fs-gold);
+    outline-offset: 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 4px rgba(254, 213, 0, 0.2);
+}
+
+/* Ensure buttons have visible focus states */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--fs-gold);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(254, 213, 0, 0.2);
+}
+
+/* Remove default outline for mouse users, keep for keyboard */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Category Icons */
+.category-icon-injected {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    color: var(--ifm-color-primary);
+    font-size: 1.25rem;
+    vertical-align: middle;
+    overflow: visible !important;
+    position: relative;
+    z-index: 10;
+    padding: 0.25rem;
+    margin: 0 0.5rem 0 0;
+}
+
+.category-icon-injected svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    overflow: visible !important;
+}
+
+/* Ensure icon doesn't break card layout */
+.theme-doc-card .card__title {
+    display: flex;
+    align-items: center;
+    overflow: visible !important;
+    position: relative;
+}
+
+.theme-doc-card .card__title .category-icon-injected {
+    flex-shrink: 0;
+}
+
+/* Hide default Docusaurus folder icons/emojis on category cards */
+.theme-doc-card .card__title .theme-doc-sidebar-item-icon,
+.theme-doc-card .card__title svg[class*="folder"],
+.theme-doc-card .card__title [class*="Folder"] {
+    display: none !important;
+}
+
+/* Remove folder emojis from category card titles */
+.theme-doc-card .card__title::before {
+    content: none !important;
+}
+
+/* Hide any default icons that Docusaurus adds before our custom icons */
+.theme-doc-card[data-category-icon] .card__title > *:first-child:not(.category-icon-injected):not(a) {
+    display: none;
+}
+
+/* ============================================
+   Table Styling - Consistent Header/Data Look
+   ============================================ */
+
+/* Make table headers look identical to data cells */
+.theme-doc-markdown table thead th,
+.theme-doc-markdown table th {
+    background-color: transparent !important;
+    color: var(--ifm-font-color-base) !important;
+    font-weight: normal !important;
+    text-align: left !important;
+    padding: 0.75rem 1rem !important;
+    border-bottom: 2px solid var(--fs-yellow-green) !important;
+    border-top: 1px solid var(--ifm-table-border-color) !important;
+    font-size: inherit !important;
+}
+
+/* Style all table cells consistently */
+.theme-doc-markdown table td,
+.theme-doc-markdown table th {
+    background-color: transparent !important;
+    color: var(--ifm-font-color-base) !important;
+    padding: 0.75rem 1rem !important;
+    border: 1px solid var(--ifm-table-border-color) !important;
+    vertical-align: top !important;
+}
+
+/* Remove default header styling */
+.theme-doc-markdown table thead {
+    background-color: transparent !important;
+}
+
+/* Table container styling */
+.theme-doc-markdown table {
+    display: table !important;
+    width: 100% !important;
+    margin: 1.5rem 0 !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    overflow-x: auto !important;
+}
+
+/* Striped rows for better readability (optional - can be removed if not desired) */
+.theme-doc-markdown table tbody tr:nth-child(even) {
+    background-color: var(--ifm-table-stripe-background) !important;
+}
+
+.theme-doc-markdown table tbody tr:nth-child(odd) {
+    background-color: transparent !important;
+}
+
+/* Dark mode table adjustments */
+[data-theme='dark'] .theme-doc-markdown table th,
+[data-theme='dark'] .theme-doc-markdown table td {
+    border-color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .theme-doc-markdown table tbody tr:nth-child(even) {
+    background-color: var(--ifm-color-emphasis-100) !important;
+}
+
+/* ============================================
+   Code Block Improvements
+   ============================================ */
+
+/* Improve code block readability */
+.theme-doc-markdown pre {
+    background-color: rgba(25, 72, 64, 0.05) !important;
+    border-radius: 0.5rem !important;
+    padding: 1.25rem !important;
+    overflow-x: auto !important;
+    line-height: 1.6 !important;
+    font-size: 0.9rem !important;
+    border-left: 3px solid var(--fs-yellow-green) !important;
+    box-shadow: 0 2px 8px rgba(25, 72, 64, 0.15) !important;
+}
+
+.theme-doc-markdown code {
+    background-color: var(--ifm-code-background) !important;
+    color: var(--ifm-code-color) !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 0.25rem !important;
+    font-size: 0.9em !important;
+}
+
+.theme-doc-markdown pre code {
+    padding: 0 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+}
+
+/* Code block container */
+.theme-doc-markdown .prism-code {
+    background-color: var(--ifm-code-background) !important;
+}
+
+/* ============================================
+   Typography & Spacing Improvements
+   ============================================ */
+
+/* Improve heading hierarchy and spacing */
+.theme-doc-markdown h1 {
+    font-size: 2.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+}
+
+.theme-doc-markdown h2 {
+    font-size: 2rem !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 2px solid var(--fs-yellow-green) !important;
+    position: relative !important;
+}
+
+.theme-doc-markdown h2::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    width: 25% !important;
+    height: 2px !important;
+    background: var(--fs-gold) !important;
+}
+
+.theme-doc-markdown h3 {
+    font-size: 1.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.75rem !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+}
+
+.theme-doc-markdown h4 {
+    font-size: 1.25rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+}
+
+/* Improve paragraph spacing */
+.theme-doc-markdown p {
+    margin-bottom: 1rem !important;
+    line-height: 1.7 !important;
+}
+
+/* Improve list spacing */
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+    margin-bottom: 1rem !important;
+    padding-left: 2rem !important;
+    line-height: 1.7 !important;
+}
+
+.theme-doc-markdown li {
+    margin-bottom: 0.5rem !important;
+}
+
+/* Improve blockquote styling */
+.theme-doc-markdown blockquote {
+    border-left: 4px solid var(--fs-yellow-green) !important;
+    padding-left: 1rem !important;
+    margin: 1.5rem 0 !important;
+    color: var(--ifm-color-content-secondary) !important;
+    font-style: italic !important;
+    background-color: rgba(25, 72, 64, 0.1) !important;
+    padding: 1rem 1rem 1rem 1.5rem !important;
+    border-radius: 0.25rem !important;
+    box-shadow: 0 2px 4px rgba(25, 72, 64, 0.15) !important;
+}
+
+/* ============================================
+   Link Improvements
+   ============================================ */
+
+.theme-doc-markdown a {
+    color: var(--ifm-color-primary) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease, text-decoration 0.2s ease !important;
+    border-bottom: 1px solid transparent !important;
+}
+
+.theme-doc-markdown a:hover {
+    color: var(--fs-yellow-green) !important;
+    text-decoration: none !important;
+    border-bottom-color: var(--fs-gold) !important;
+}
+
+.theme-doc-markdown a:focus-visible {
+    outline: 2px solid var(--fs-gold) !important;
+    outline-offset: 2px !important;
+    border-radius: 2px !important;
+    box-shadow: 0 0 0 4px rgba(254, 213, 0, 0.2) !important;
+}
+
+/* ============================================
+   Content Container Improvements
+   ============================================ */
+
+/* Improve main content area spacing */
+.theme-doc-markdown {
+    max-width: 100% !important;
+    line-height: 1.7 !important;
+}
+
+/* Improve section spacing */
+.theme-doc-markdown > * + * {
+    margin-top: 1rem !important;
+}
+
+/* Better spacing for function sections */
+.theme-doc-markdown h3 + p,
+.theme-doc-markdown h3 + blockquote,
+.theme-doc-markdown h3 + ul,
+.theme-doc-markdown h3 + ol {
+    margin-top: 0.75rem !important;
+}
+
+/* ============================================
+   Horizontal Rule Styling
+   ============================================ */
+
+.theme-doc-markdown hr {
+    border: none !important;
+    border-top: 2px solid var(--fs-yellow-green) !important;
+    margin: 2rem 0 !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.theme-doc-markdown hr::after {
+    content: '' !important;
+    position: absolute !important;
+    top: -2px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 60px !important;
+    height: 2px !important;
+    background: var(--fs-gold) !important;
+}
+
+/* ============================================
+   Definition Lists (if used)
+   ============================================ */
+
+.theme-doc-markdown dl {
+    margin: 1.5rem 0 !important;
+}
+
+.theme-doc-markdown dt {
+    font-weight: 600 !important;
+    margin-top: 1rem !important;
+    color: var(--fs-gold) !important;
+    text-shadow: 0 1px 2px rgba(254, 213, 0, 0.1) !important;
+}
+
+.theme-doc-markdown dd {
+    margin-left: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+    color: var(--ifm-color-content-secondary) !important;
+}
+
+/* ============================================
+   Category Index Page Improvements
+   ============================================ */
+
+/* Category index page title styling */
+.theme-doc-markdown.margin-bottom--lg > h1:first-child {
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 2rem !important;
+    background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    letter-spacing: -0.02em !important;
+    padding-bottom: 1rem !important;
+    border-bottom: 3px solid var(--fs-yellow-green) !important;
+    position: relative !important;
+}
+
+.theme-doc-markdown.margin-bottom--lg > h1:first-child::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -3px !important;
+    left: 0 !important;
+    width: 40% !important;
+    height: 3px !important;
+    background: var(--fs-gold) !important;
+}
+
+/* Category index page description */
+.theme-doc-markdown.margin-bottom--lg > p:first-of-type {
+    font-size: 1.25rem !important;
+    color: var(--ifm-color-content-secondary) !important;
+    margin-bottom: 2.5rem !important;
+    line-height: 1.7 !important;
+    max-width: 800px !important;
+}
+
+/* ============================================
+   DocCard Improvements
+   ============================================ */
+
+/* Enhanced card styling */
+.theme-doc-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: 1px solid var(--ifm-color-emphasis-200) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background: rgba(25, 72, 64, 0.08) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.theme-doc-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px var(--fs-yellow-green),
+    0 0 8px rgba(25, 72, 64, 0.2) !important;
+    border-color: var(--fs-yellow-green) !important;
+}
+
+/* Card title improvements */
+.theme-doc-card .card__title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.4 !important;
+    color: var(--ifm-heading-color) !important;
+    transition: color 0.2s ease !important;
+    background: transparent !important;
+}
+
+.theme-doc-card:hover .card__title {
+    color: var(--fs-yellow-green) !important;
+}
+
+.theme-doc-card .card__title a {
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.theme-doc-card .card__title a:hover {
+    color: var(--fs-yellow-green) !important;
+    text-decoration: none !important;
+}
+
+/* Card body improvements */
+.theme-doc-card .card__body {
+    padding: 1.25rem !important;
+    background: transparent !important;
+}
+
+.theme-doc-card .card__body p {
+    margin-bottom: 0.75rem !important;
+    color: var(--ifm-color-content) !important;
+    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Card footer improvements */
+.theme-doc-card .card__footer {
+    padding: 0.75rem 1.25rem !important;
+    background-color: rgba(25, 72, 64, 0.12) !important;
+    border-top: 1px solid rgba(170, 198, 60, 0.3) !important;
+    font-size: 0.875rem !important;
+    color: var(--ifm-color-content) !important;
+}
+
+/* Card icon improvements */
+.theme-doc-card .category-icon-injected {
+    transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+.theme-doc-card:hover .category-icon-injected {
+    transform: scale(1.1) !important;
+    color: var(--ifm-color-primary) !important;
+}
+
+/* ============================================
+   DocCardList Improvements
+   ============================================ */
+
+/* Card grid improvements */
+.theme-doc-card-list {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin: 2rem 0 !important;
+}
+
+@media (max-width: 768px) {
+    .theme-doc-card-list {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+}
+
+/* Category index page container */
+.theme-doc-markdown.margin-bottom--lg {
+    max-width: 100% !important;
+    padding: 2rem 0 !important;
+}
+
+/* ============================================
+   Main Content Area Improvements
+   ============================================ */
+
+/* Main content container */
+.theme-doc-version-badge,
+.theme-doc-breadcrumbs {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Page container improvements */
+.container {
+    max-width: 1200px !important;
+}
+
+/* ============================================
+   Sidebar Improvements
+   ============================================ */
+
+/* Sidebar styling */
+.theme-doc-sidebar-container {
+    border-right: 1px solid var(--ifm-color-emphasis-200) !important;
+}
+
+/* Sidebar menu items */
+.theme-doc-sidebar-menu {
+    padding: 0.5rem 0 !important;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+    margin: 0.25rem 0 !important;
+}
+
+.theme-doc-sidebar-menu .menu__link:hover {
+    background-color: var(--ifm-color-emphasis-100) !important;
+    color: var(--ifm-color-primary) !important;
+}
+
+.theme-doc-sidebar-menu .menu__link--active {
+    background-color: var(--ifm-color-emphasis-100) !important;
+    color: var(--ifm-color-primary) !important;
+    font-weight: 500 !important;
+    border-left: 3px solid var(--fs-gold) !important;
+    padding-left: calc(1rem - 3px) !important;
+    box-shadow: inset 0 0 8px rgba(254, 213, 0, 0.1) !important;
+}
+
+/* ============================================
+   Breadcrumb Improvements
+   ============================================ */
+
+.theme-doc-breadcrumbs {
+    padding: 0.75rem 0 !important;
+    font-size: 0.9rem !important;
+}
+
+.theme-doc-breadcrumbs a {
+    color: var(--ifm-color-content-secondary) !important;
+    transition: color 0.2s ease !important;
+    position: relative !important;
+}
+
+.theme-doc-breadcrumbs a:hover {
+    color: var(--fs-yellow-green) !important;
+}
+
+.theme-doc-breadcrumbs a:hover::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 2px !important;
+    background: var(--fs-gold) !important;
+    border-radius: 1px !important;
+}
+
+/* ============================================
+   Search Improvements
+   ============================================ */
+
+/* Search bar styling */
+.navbar__search-input {
+    border-radius: 8px !important;
+    border: 1px solid rgba(170, 198, 60, 0.3) !important;
+    transition: all 0.2s ease !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--ifm-color-content) !important;
+}
+
+/* Light mode: Use lighter background and text for search input */
+:root:not([data-theme='dark']) .navbar__search-input {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    border-color: rgba(170, 198, 60, 0.4) !important;
+}
+
+.navbar__search-input:focus {
+    border-color: var(--fs-gold) !important;
+    box-shadow: 0 0 0 3px rgba(254, 213, 0, 0.15), 0 0 8px rgba(254, 213, 0, 0.2) !important;
+    outline: none !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Light mode: Brighter focus state */
+:root:not([data-theme='dark']) .navbar__search-input:focus {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar__search-input::placeholder {
+    color: var(--ifm-color-content-secondary) !important;
+    opacity: 0.7 !important;
+}
+
+/* Light mode: Lighter placeholder text */
+:root:not([data-theme='dark']) .navbar__search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 0.8 !important;
+}
+
+/* ============================================
+   Navbar Improvements
+   ============================================ */
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(170, 198, 60, 0.2) !important;
+    backdrop-filter: blur(10px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+    background: var(--fs-pine-teal-95) !important;
+    border-bottom: 2px solid var(--fs-yellow-green) !important;
+    position: relative !important;
+}
+
+.navbar::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 120px !important;
+    height: 2px !important;
+    background: var(--fs-gold) !important;
+}
+
+.navbar__brand {
+    transition: opacity 0.2s ease !important;
+}
+
+.navbar__brand:hover {
+    opacity: 0.9 !important;
+}
+
+.navbar__item {
+    transition: all 0.2s ease !important;
+    border-radius: 6px !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+.navbar__item:hover {
+    background-color: rgba(170, 198, 60, 0.15) !important;
+    color: var(--fs-yellow-green) !important;
+}
+
+/* Light mode: Brighter hover background for better visibility */
+:root:not([data-theme='dark']) .navbar__item:hover {
+    background-color: rgba(170, 198, 60, 0.25) !important;
+}
+
+.navbar__link {
+    color: var(--ifm-color-content) !important;
+    transition: color 0.2s ease !important;
+}
+
+/* Light mode: Use light text on dark navbar background */
+:root:not([data-theme='dark']) .navbar__link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar__link:hover {
+    color: var(--fs-yellow-green) !important;
+}
+
+/* Light mode: Keep yellow-green on hover */
+:root:not([data-theme='dark']) .navbar__link:hover {
+    color: var(--fs-yellow-green) !important;
+}
+
+.navbar__link--active {
+    color: var(--fs-gold) !important;
+    font-weight: 600 !important;
+    position: relative !important;
+}
+
+/* Light mode: Keep gold for active links */
+:root:not([data-theme='dark']) .navbar__link--active {
+    color: var(--fs-gold) !important;
+}
+
+.navbar__link--active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -4px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 2px !important;
+    background: var(--fs-gold) !important;
+    border-radius: 1px !important;
+}
+
+.navbar__logo {
+    transition: opacity 0.2s ease !important;
+}
+
+.navbar__logo:hover {
+    opacity: 0.9 !important;
+    filter: drop-shadow(0 0 8px rgba(254, 213, 0, 0.3)) !important;
+}
+
+.navbar__title {
+    color: var(--ifm-color-content) !important;
+    transition: color 0.2s ease !important;
+}
+
+/* Light mode: Use light text on dark navbar background */
+:root:not([data-theme='dark']) .navbar__title {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar__title:hover {
+    color: var(--fs-yellow-green) !important;
+}
+
+/* Light mode: Keep yellow-green on hover */
+:root:not([data-theme='dark']) .navbar__title:hover {
+    color: var(--fs-yellow-green) !important;
+}
+
+/* Light mode: Ensure navbar buttons and icons are readable */
+:root:not([data-theme='dark']) .navbar button:not(.navbar__search-input) {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+:root:not([data-theme='dark']) .navbar svg {
+    color: rgba(255, 255, 255, 0.9) !important;
+    fill: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* ============================================
+   Smooth Animations
+   ============================================ */
+
+/* Fade in animation for cards */
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.theme-doc-card {
+    animation: fadeInCard 0.5s ease-out !important;
+    animation-fill-mode: both !important;
+}
+
+/* Stagger animation for multiple cards */
+.theme-doc-card:nth-child(1) {
+    animation-delay: 0.05s !important;
+}
+
+.theme-doc-card:nth-child(2) {
+    animation-delay: 0.1s !important;
+}
+
+.theme-doc-card:nth-child(3) {
+    animation-delay: 0.15s !important;
+}
+
+.theme-doc-card:nth-child(4) {
+    animation-delay: 0.2s !important;
+}
+
+.theme-doc-card:nth-child(5) {
+    animation-delay: 0.25s !important;
+}
+
+.theme-doc-card:nth-child(6) {
+    animation-delay: 0.3s !important;
+}
+
+.theme-doc-card:nth-child(n+7) {
+    animation-delay: 0.35s !important;
+}
+
+/* ============================================
+   Responsive Improvements
+   ============================================ */
+
+@media (max-width: 996px) {
+    .theme-doc-markdown.margin-bottom--lg > h1:first-child {
+        font-size: 2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .theme-doc-markdown.margin-bottom--lg > p:first-of-type {
+        font-size: 1.1rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .theme-doc-card-list {
+        gap: 1rem !important;
+    }
+
+    .theme-doc-card {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* ============================================
+   Loading States
+   ============================================ */
+
+/* Smooth transitions for content loading */
+.theme-doc-markdown {
+    animation: fadeIn 0.4s ease-out !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   Focus States for Accessibility
+   ============================================ */
+
+.theme-doc-card:focus-within {
+    outline: 2px solid var(--ifm-color-primary) !important;
+    outline-offset: 2px !important;
+    border-radius: 12px !important;
+}
+
+.theme-doc-card .card__title a:focus-visible {
+    outline: 2px solid var(--ifm-color-primary) !important;
+    outline-offset: 2px !important;
+    border-radius: 4px !important;
+}
+
+
 

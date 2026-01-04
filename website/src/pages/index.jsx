@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -15,6 +16,8 @@ function HomepageHeader() {
                         src="/FS25-Community-LUADOC/img/fs25-logo.png"
                         alt="FS25"
                         className={styles.heroLogo}
+                        loading="lazy"
+                        decoding="async"
                     />
                     <span className={styles.heroTitleText}>Community LUADOC</span>
                 </h1>
@@ -169,16 +172,80 @@ function OfficialGameSection() {
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
+    const pageUrl = `${siteConfig.url}${siteConfig.baseUrl}`;
+    const ogImage = `${siteConfig.url}${siteConfig.baseUrl}${siteConfig.themeConfig.image}`;
+    const pageDescription = "Comprehensive documentation for all Lua scripting APIs available in Farming Simulator 25. Browse 1,661 pages covering engine functions, script APIs, and game scripting.";
+
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": siteConfig.title,
+        "description": pageDescription,
+        "url": pageUrl,
+        "author": {
+            "@type": "Organization",
+            "name": "FS25 Community"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "FS25 Community",
+            "logo": {
+                "@type": "ImageObject",
+                "url": ogImage
+            }
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": `${pageUrl}search?q={search_term_string}`
+            },
+            "query-input": "required name=search_term_string"
+        }
+    };
+
     return (
-        <Layout
-            title={`${siteConfig.title}`}
-            description="Comprehensive documentation for all Lua scripting APIs available in Farming Simulator 25">
-            <HomepageHeader/>
-            <main>
-                <StatsSection/>
-                <OfficialGameSection/>
-            </main>
-        </Layout>
+        <>
+            <Head>
+                {/* Meta Description */}
+                <meta name="description" content={pageDescription}/>
+
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content={pageUrl}/>
+                <meta property="og:title" content={siteConfig.title}/>
+                <meta property="og:description" content={pageDescription}/>
+                <meta property="og:image" content={ogImage}/>
+                <meta property="og:image:alt" content={siteConfig.title}/>
+                <meta property="og:site_name" content="FS25 Community LUADOC"/>
+                <meta property="og:locale" content="en_US"/>
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content={siteConfig.title}/>
+                <meta name="twitter:description" content={pageDescription}/>
+                <meta name="twitter:image" content={ogImage}/>
+                <meta name="twitter:image:alt" content={siteConfig.title}/>
+
+                {/* Additional SEO */}
+                <meta name="robots" content="index, follow"/>
+                <link rel="canonical" href={pageUrl}/>
+
+                {/* Structured Data (JSON-LD) */}
+                <script type="application/ld+json">
+                    {JSON.stringify(structuredData)}
+                </script>
+            </Head>
+            <Layout
+                title={`${siteConfig.title}`}
+                description={pageDescription}>
+                <HomepageHeader/>
+                <main>
+                    <StatsSection/>
+                    <OfficialGameSection/>
+                </main>
+            </Layout>
+        </>
     );
 }
 

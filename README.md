@@ -24,3 +24,4 @@ This is a community-maintained documentation repository, contributions and impro
 - [FS25-lua-scripting](https://github.com/Dukefarming/FS25-lua-scripting) — Raw Lua source files from the game's dataS folder
 - [FS25 AI Coding Reference](https://github.com/XelaNull/FS25_UsedPlus/tree/master/FS25_AI_Coding_Reference) — Battle-tested implementation patterns and pitfalls
 - [fs-utils](https://github.com/scfmod/fs-utils) - A collection of tools for decompiling and reading FS game files.
+- [fs25-skills](https://github.com/Paint-a-Farm/fs25-skills) - AI agent skills for Farming Simulator 25 mod development — packaging, deployment, Lua scripting, and game file tools.
